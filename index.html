@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <div class="grid" id="dynamic-grid"></div>
+    <div class="container">
+        <header>
+            <div class="logo">Christie x Wix</div>
+            <div class="header-text">Presented at DEPT</div>
+              <link rel="stylesheet" href="styles.css">
+        </header>
+        
+        <div class="content" style="padding: 0; background-color: transparent; box-shadow: none;" id="page1">
+            <a href="https://weblabny.wixstudio.com/time-in-a-scroll">
+            <video class="video-1" autoplay muted loop>
+                <source src="screen-record.mp4" type="video/mp4">
+            </video>
+        </a>
+        </div>
+        
+        <div class="content" id="page2" style="display: none;">
+            <div class="left-panel">
+                <h2 class="panel-title">Feature Research<br>+<br>Concept Research</h2>
+            </div>
+            <div class="right-panel">
+                <img class="image-placeholder" src="feature research.png">
+            </div>
+        </div>
+        
+        <div class="content" id="page3" style="display: none;">
+            <div class="left-panel">
+                <h2 class="panel-title">Design in Figma</h2>
+            </div>
+            <div class="right-panel">
+                <video class="video-1" autoplay muted loop>
+                    <source src="figma.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        
+        <div class="content" id="page4" style="display: none;">
+            <div class="left-panel">
+                <h2 class="panel-title">Build in Wix Editor</h2>
+            </div>
+            <div class="right-panel">
+                <img class="image-placeholder" src="wix-build.png">
+            </div>
+        </div>
+        
+        <div class="content" id="page6" style="display: none;">
+            <div class="blinking-text">
+          Thank You:)
+            </div>
+        </div>
+        
+        <div class="content" id="page5" style="display: none;">
+            <div class="left-panel">
+                <h2 class="panel-title">Learnings</h2>
+            </div>
+            <div class="right-panel">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">1. Pop-up websites for client projects</div>
+                        <div class="accordion-content">
+            
+                                <img class="image-placeholder" style="margin: 0;" src="twitchcon.png">
+                                <span style="color: #C0F94A;">imagine we can do better than this!</span>
+
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">2. Design web banners with interaction</div>
+                        <div class="accordion-content">
+                            <video class="video-1" autoplay muted loop>
+                                <source src="etrade.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">3. Scaling and Parameters Design</div>
+                        <div class="accordion-content">
+                            <div class="container-card">
+                                <div class="card">
+                                    <p>What is flexible:</p>
+                                    <ul>
+                                        <li>paddings (spacing around containers)</li>
+                                        <li>size of containers</li>
+                                        <li>font size</li>
+                                        <li>Native web animation</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="card">
+                                    <p>Not flexible:</p>
+                                    <ul class="not-flexible-list">
+                                        <li>Image Sizes</li>
+                                        <li>Video Size</li>
+                                        <li>Hover state</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">4. Using AI in design</div>
+                        <div class="accordion-content">
+                            <img class="image-placeholder" src="ai as a toool.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="navbar">
+        <a href="#page1" class="nav-btn active" onclick="showPage(1)">1</a>
+        <a href="#page2" class="nav-btn" onclick="showPage(2)">2</a>
+        <a href="#page3" class="nav-btn" onclick="showPage(3)">3</a>
+        <a href="#page4" class="nav-btn" onclick="showPage(4)">4</a>
+        <a href="#page5" class="nav-btn" onclick="showPage(5)">5</a>
+        <a href="#page6" class="nav-btn" onclick="showPage(6)">6</a>
+    </nav>
+    <script src="script.js"></script>
+</body>
+
+</html>
